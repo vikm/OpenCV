@@ -7,7 +7,7 @@ int main(int argc, char* argv[])
 
 	IplImage* img = cvLoadImage("input_img.jpg");
 	CvSize size = cvGetSize(img);
-	cvRectangle(img, cvPoint(size.width/2-50, size.height/2-50), cvPoint(size.width/2+50, size.height/2+50), cvScalar(50, 200, 50), -1);
+	cvRectangle(img, cvPoint(size.width/2-50, size.height/2-50), cvPoint(size.width/2+50, size.height/2+50), cvScalar(50, 20	0, 50), -1);
 	cvSaveImage("output_img.jpg", img);
 	cvNamedWindow("Image");
 	cvShowImage("Image", img);
@@ -16,8 +16,3 @@ int main(int argc, char* argv[])
 	cvDestroyWindow("Image");
 	return 0;
 }
-
-
-
-
-
